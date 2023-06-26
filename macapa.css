@@ -1,0 +1,66 @@
+:root{
+    --patter_border-radius:10px;
+}
+
+{
+    margin: 0;
+    padding: 0;
+}
+
+.container-slide{
+display: flex;
+justify-content: space-between;
+width: 50vw;
+height: 50vh;
+background-color: black;
+margin: 20vh auto;
+border-radius: var(--patter_border-radius);
+box-shadow: 0 20px 30px rebeccapurple;
+border: 5px solid black;
+}
+
+.container-slide{
+    position:absolute;
+    display: flex;
+    width: 50vw;
+    height: 50vw;
+    border-radius: var(--patter_border-radius);
+    overflow: hidden;
+}
+
+.item{
+    width: 50vw;
+    width: 50vh;
+    transition: all 1s;
+}
+
+.item:first-child{
+    margin-left: 100%;
+}
+
+.item img{
+    width: 50vw;
+    height: 50vh;
+    border-radius: var(--patter_border-radius);
+}
+
+.action-button{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.action-button:hover{
+    color: brown;
+    background-color: black;
+    transition: all 1s;
+}
+
+#previus{
+border-color: var(--patter_border-radius) 0px 0px var(--patter_border-radius);
+}
+
+#next{
+    border-radius: 0px var(--patter_border-radius) var(--patter_border-radius) 0px;
+}
